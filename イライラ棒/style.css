@@ -1,0 +1,375 @@
+/* 画面の大枠 */
+#box {
+  position: relative;
+  margin: 0 auto;
+  width: 1050px;
+  height: 700px;
+  background-image: url("./imgs/space.png");
+  /* border: 5px solid; */
+}
+
+#reset,
+#restart {
+  font-size: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  background: #537acf;
+border-radius: 5px;
+  border: solid 4px #6e2dfa;
+}
+
+#reset:hover {
+  background: #ae4646;
+  border: solid 4px #ff0d0d;
+}
+
+#reset:active {
+      background: #821b1b;
+}
+
+#restart:hover {
+          background: #5b36ff;
+  border: solid 4px #1100c8;
+      }
+
+#restart:active {
+              background: #1b1e82;
+}
+
+body {
+background-image: url("./imgs/space.png");
+}
+
+.control {
+  background-color: #484848;
+  width: 500px;
+  height: 400px;
+              margin: auto;
+  margin-top: 20px;
+  border: solid 10px #2a2a2a;
+}
+
+.control p {
+font-size: 30px;
+text-align: center;
+padding-top: 1em;
+}
+
+#level_L,
+              #level_H {
+  font-size: 50px;
+                  display: block;
+                  margin: auto;
+  margin-top: 1em;
+                  background: #537acf;
+border-radius: 5px;
+  border: solid 4px #6e2dfa;
+              }
+
+#level_L:hover,
+#level_H:hover {
+                  background: #82ae46;
+/* 少し濃い緑色 */
+  border: solid 4px #82ae46;
+                  /* 少し濃い緑色 */
+              }
+
+#level_L:active,
+#level_H:active {
+                      background: #69821b;
+/* 濃い緑色 */
+}
+
+
+#msg {
+  font-size: 50px;
+  text-align: center;
+  background-color: #1e90ff;
+color: white;
+font-weight: 800;
+font-family: 'Courier New', Courier, monospace;
+width: 200px;
+margin: auto;
+margin-top: 20px;
+
+
+}
+
+/* 壁となる縦線と横線 */
+span {
+position: absolute;
+display: inline-block;
+  color: #fff;
+                      }
+
+                      #horizontal span {
+  border-top: 15px solid
+                      }
+
+                      #vertical span {
+  border-left: 15px solid
+                      }
+
+                      .x1 {
+  width: 1050px;
+                      }
+
+                      .y1 {
+  height: 700px;
+                      }
+
+
+                      .w1 {
+  width: 150px;
+                      }
+
+                      .w2 {
+  width: 300px;
+                      }
+
+                      .w3 {
+  width: 450px;
+                      }
+
+                      .w4 {
+  width: 600px;
+                      }
+
+                      .w5 {
+  width: 750px;
+                      }
+
+                      .h1 {
+  height: 100px;
+                      }
+
+                      .h2 {
+  height: 200px;
+                      }
+
+                      .h3 {
+  height: 300px;
+                      }
+
+                      .h4 {
+  height: 400px;
+                      }
+
+                      .h5 {
+  height: 500px;
+                      }
+
+                      .t0 {
+  top: 0px;
+                      }
+
+                      .t1 {
+  top: 100px;
+                      }
+
+                      .t2 {
+  top: 200px;
+                      }
+
+                      .t3 {
+  top: 300px;
+                      }
+
+                      .t4 {
+  top: 400px;
+                      }
+
+                      .t5 {
+  top: 500px;
+                      }
+
+                      .t6 {
+  top: 600px;
+                      }
+
+                      .t7 {
+  top: 685px;
+                      }
+
+                      .l0 {
+  left: 0px;
+                      }
+
+                      .l1 {
+  left: 150px;
+                      }
+
+                      .l2 {
+  left: 300px;
+                      }
+
+                      .l3 {
+  left: 450px;
+                      }
+
+                      .l4 {
+  left: 600px;
+                      }
+
+                      .l5 {
+  left: 750px;
+                      }
+
+                      .l6 {
+  left: 900px;
+                      }
+
+                      .l7 {
+  left: 1035px;
+                      }
+
+                      /* アウト画面 */
+                      #failed {
+                          position: absolute;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+                          background: #fff;
+  z-index: 100;
+                      }
+
+
+                      /* クリア画面 */
+                      #clear {
+                          position: absolute;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+                          background: #fff;
+  z-index: 100;
+                      }
+
+                      .hidden_f {
+                          display: none
+                      }
+
+                      .hidden_c {
+                          display: none
+                      }
+
+
+
+                      /* ボタン */
+                      button {
+  font-size: 48px;
+                          color: #fff;
+
+                      }
+
+                      #start {
+                          position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 495px;
+  border-radius: 50%;
+  background-color: blue;
+                      }
+
+                      #stop {
+                          position: absolute;
+  width: 75px;
+  height: 75px;
+  left: 495px;
+  border-radius: 50%;
+  background-color: red;
+                      }
+
+                      #start {
+  top: 10px
+                      }
+
+                      #stop {
+  bottom: 10px
+                      }
+
+
+
+
+
+                      .up {
+  animation: 0.2s linear infinite up;
+  animation-direction: alternate;
+                      }
+
+                      .up2 {
+  animation: 0.2s linear infinite up2;
+  animation-direction: alternate;
+                      }
+
+                      .up3 {
+  animation: 0.2s linear infinite up3;
+  animation-direction: alternate;
+                      }
+
+                      .down {
+  animation: 0.2s linear infinite down;
+  animation-direction: alternate;
+                      }
+
+                      @keyframes up {
+  0% {
+    height: 100px;
+                          }
+
+  100% {
+    height: 300px
+                          }
+                      }
+
+                      @keyframes down {
+  0% {
+    height: 300px;
+                          }
+
+  100% {
+    height: 400px
+                          }
+                      }
+
+                      @keyframes up2 {
+  0% {
+    height: 100px;
+                          }
+
+  100% {
+    height: 200px
+                          }
+                      }
+
+
+                      @keyframes up3 {
+  0% {
+    height: 200px;
+                          }
+
+  100% {
+    height: 400px
+                          }
+                      }
+
+
+
+
+
+                      /* ストップウォッチ */
+                      #time {
+                          color: #1e90ff;
+font-size: 3rem;
+text-align: center;
+padding: 1rem;
+border-radius: 1rem;
+box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+margin: .5rem;
+width: 800px;
+margin: auto;
+}

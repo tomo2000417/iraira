@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div id="time">00:00.000</div>
+
+<div id="box">
+  <!-- 横の線 -->
+    <div id="horizontal"> 
+      <span class="x1 t0"></span>
+      <span class="x1 t7"></span>
+      <span class="w4 t1 l3 "></span>
+      <span class="w4 t1 l3 "></span>
+      <span class="w2 t2 l4"></span>
+      <span class="w2 t3 l1"></span>
+      <span class="w1 t3 l4 "></span>
+      <span class="w2 t4 l3 "></span>
+      <span class="w4 t5 l2"></span>
+    </div>
+
+    <!-- 縦の線 -->
+    <div id="vertical">
+      <span class="y1 l0 "></span>
+      <span class="y1 l7 "></span>
+      <span class="h5 t1 l1"></span>
+      <span id = "one" class="h2 l2 up3"></span>
+      <span class="h1 t4 l2 "></span>
+      <span class="h1 t6 l2 "></span>
+      <span class="h3 t1 l3  "></span>
+      <span class="h2 t5 l3"></span>
+      <span id="two" class="h1 t2 l4 up"></span>
+      <span class="h1 t6 l4 "></span>
+      <span id="three" class="h1 t5 l5 up2"></span>
+      <span id="four" class="h3 t2 l6 down"></span>
+      <span class="h1 t6 l6 "></span>
+    </div>
+  
+    <div id="failed" class="hidden_f">
+      <img class="image" src="./imgs/failed.png" alt="失敗" width="600px" />
+      <div>
+        <button id="reset" onclick="reset()">もう一度</button>
+      </div>
+    </div>
+
+    <div id="clear" class="hidden_c">
+       <img  class="image" src="./imgs/clear.png" alt="クリア" width="600px" />
+    
+       <div>
+     
+          <button id="restart" onclick="reset()">スタートに戻る</button>
+      
+       </div>
+      <p id="msg"></p>
+    </div> 
+
+  
+    <button id="start" onclick="start()">S</button>
+    <button id="stop" onclick="stop()">G</button>
+     </div>
+
+     <div class="control">
+      <p>船内コントロールパネル</p>
+     <button id="level_L" onclick="low_mode()" >バーを止める</button>
+     <button id="level_H"  onclick="high_mode()" >バーを動かす</button>
+     </div>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/time.js"></script>
+ 
+
+</body>
+</html>
